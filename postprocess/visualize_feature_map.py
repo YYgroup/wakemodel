@@ -1,5 +1,6 @@
 """
 可视化网络中间的特征图，网络的权重参数
+@author: Wenwen Tong, Peking University
 """
 import pdb
 import torch

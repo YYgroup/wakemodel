@@ -1,9 +1,6 @@
-# train.py
-#!/usr/bin/env	python3
-
 """ train network using pytorch
 
-author Wenwen Tong, Peking University
+@author: Wenwen Tong, Peking University
 """
 
 import os
@@ -21,7 +18,6 @@ import torchvision.transforms as transforms
 import pdb
 
 from torch.utils.data import DataLoader
-#from torch.utils.tensorboard import SummaryWriter  # 低版本pytorch无法使用该命令
 from tensorboardX import SummaryWriter
 from conf import settings
 from utils import get_network, get_training_dataloader, get_test_dataloader, WarmUpLR, \
@@ -468,8 +464,6 @@ if __name__ == '__main__':
 
         cur_loss = eval_training(epoch, save_pre=args.save_pre)
 
-        #start to save best performance model after learning rate decay to 0.01
-        # if epoch > settings.MILESTONES[1] and best_acc < acc:
         if cur_loss < minimum_loss:
             weights_path = checkpoint_path.format(net=args.net, epoch=epoch, type='best')
             print('saving weights file to {}'.format(weights_path))

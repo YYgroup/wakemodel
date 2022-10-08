@@ -1,6 +1,6 @@
 """ helper function
 
-author baiyu
+@author: Wenwen Tong, Peking University
 """
 import os
 import sys

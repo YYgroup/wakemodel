@@ -1,11 +1,7 @@
-# wakemodel
-
-CNN wake model
+# CNN wake model
 
 This data-driven model is based on the convolutional neural network (CNN) for force estimation in moving boundary problems by regarding the velocity field on a series of cross sections as images. It has three CNN architectures for integrating physical information or attention mechanism. The model performances indicate that the optimized CNN can identify important flow regions and learn empirical physical laws.
 
-Estimating forces from cross-sectional data in the wake of flows past a plate using data-driven models based on CNN.
-This repository is based on [pytorch-cifar100](https://github.com/weiaicunzai/pytorch-cifar100).
 
 ## Environment
 - python3.7
@@ -44,5 +40,5 @@ $ sh st_data1_resnet9_aoa.sh  # baseline + alpha
 $ sh st_data1_resnet9_aoa_spatt.sh # baseline + alpha + attention module
 ```
 
-
-
+## Acknowledgement
+This repository is based on [pytorch-cifar100](https://github.com/weiaicunzai/pytorch-cifar100).

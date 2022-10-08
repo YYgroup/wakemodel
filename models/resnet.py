@@ -1,6 +1,5 @@
-"""resnet in pytorch
-
-
+"""ResNetPlate in pytorch
+@author: Wenwen Tong, Peking University
 
 [1] Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
 
